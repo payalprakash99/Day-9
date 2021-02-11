@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Calculator.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>
+            Calculator
+          </h1>
+          <br>
+          <h2>
+              Payal Prakash Shah
+          </h2>
+          <br>
+          <h3 class="date">11/2/2020</h3>
+    </body>
+    <centre>
+    <form name="form1" class="Calci" action="Calculator.html" method="POST">
+        <input type="text" name="answer" id="display">
+        <br>
+        <br>
+        <input type="button" class="ButtonFrame" value="C" onclick="form1.answer.value=''">
+        <input type="button" class="ButtonFrame" value="(" onclick="form1.answer.value+='('">
+        <input type="button" class="ButtonFrame" value=")" onclick="form1.answer.value+=')'">
+        <input type="button" class="OperatorFrame" value="/" onclick="form1.answer.value+='/'">
+        <br>
+        <input type="button" class="ButtonFrame" value="7" onclick="form1.answer.value+='7'">
+        <input type="button" class="ButtonFrame" value="8" onclick="form1.answer.value+='8'">
+        <input type="button" class="ButtonFrame" value="9" onclick="form1.answer.value+='9'">
+        <input type="button" class="OperatorFrame" value="*" onclick="form1.answer.value+='*'">
+        <br>
+        <input type="button" class="ButtonFrame" value="4" onclick="form1.answer.value+='4'">
+        <input type="button" class="ButtonFrame" value="5" onclick="form1.answer.value+='5'">
+        <input type="button" class="ButtonFrame" value="6" onclick="form1.answer.value+='6'">
+        <input type="button" class="OperatorFrame" value="-" onclick="form1.answer.value+='-'">
+
+        <br>
+        <input type="button" class="ButtonFrame" value="1" onclick="form1.answer.value+='1'">
+        <input type="button" class="ButtonFrame" value="2" onclick="form1.answer.value+='2'">
+        <input type="button" class="ButtonFrame" value="3" onclick="form1.answer.value+='3'">
+        <input type="button" class="OperatorFrame" value="+" onclick="form1.answer.value+='+'">
+
+        <br>
+        <input type="button" id="ZeroFrame" value="0" onclick="form1.answer.value+='0'">
+        <input type="button" class="ButtonFrame" value="." onclick="form1.answer.value+='.'">
+        <input type="button" class="OperatorFrame" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+        <br>
+
+    </form>
+    </centre>
+</html>
